@@ -145,16 +145,22 @@ section {
   height: 15px;
   background: rgba(255,255,255,0.3);
 }
-.balloon:nth-child(1) { left: 5%; background: #ff6b9d; animation-delay: 0s; }
-.balloon:nth-child(2) { left: 15%; background: #ffd700; animation-delay: 1s; }
-.balloon:nth-child(3) { left: 25%; background: #c084fc; animation-delay: 0.5s; }
-.balloon:nth-child(4) { left: 35%; background: #4ade80; animation-delay: 1.5s; }
-.balloon:nth-child(5) { left: 45%; background: #f472b6; animation-delay: 0.8s; }
-.balloon:nth-child(6) { left: 55%; background: #60a5fa; animation-delay: 2s; }
-.balloon:nth-child(7) { left: 65%; background: #fbbf24; animation-delay: 0.3s; }
-.balloon:nth-child(8) { left: 75%; background: #ff6b9d; animation-delay: 1.2s; }
-.balloon:nth-child(9) { left: 85%; background: #c084fc; animation-delay: 0.7s; }
-.balloon:nth-child(10) { left: 92%; background: #4ade80; animation-delay: 1.8s; }
+.balloon:nth-child(1) { left: 3%; top: 15%; background: #ff6b9d; animation-delay: 0s; }
+.balloon:nth-child(2) { left: 12%; top: 55%; background: #ffd700; animation-delay: 1.2s; }
+.balloon:nth-child(3) { left: 22%; top: 8%; background: #c084fc; animation-delay: 0.5s; }
+.balloon:nth-child(4) { left: 32%; top: 65%; background: #4ade80; animation-delay: 1.8s; }
+.balloon:nth-child(5) { left: 42%; top: 20%; background: #f472b6; animation-delay: 0.8s; }
+.balloon:nth-child(6) { left: 52%; top: 70%; background: #60a5fa; animation-delay: 2.2s; }
+.balloon:nth-child(7) { left: 62%; top: 12%; background: #fbbf24; animation-delay: 0.3s; }
+.balloon:nth-child(8) { left: 72%; top: 60%; background: #ff6b9d; animation-delay: 1.5s; }
+.balloon:nth-child(9) { left: 82%; top: 25%; background: #c084fc; animation-delay: 0.9s; }
+.balloon:nth-child(10) { left: 92%; top: 50%; background: #4ade80; animation-delay: 2s; }
+.balloon:nth-child(11) { left: 8%; top: 80%; background: #f472b6; animation-delay: 1s; }
+.balloon:nth-child(12) { left: 48%; top: 85%; background: #ffd700; animation-delay: 1.7s; }
+.balloon:nth-child(13) { left: 88%; top: 75%; background: #60a5fa; animation-delay: 0.6s; }
+.balloon:nth-child(14) { left: 18%; top: 40%; background: #4ade80; animation-delay: 2.5s; }
+.balloon:nth-child(15) { left: 68%; top: 40%; background: #fbbf24; animation-delay: 1.3s; }
+.balloon:nth-child(16) { left: 38%; top: 45%; background: #ff6b9d; animation-delay: 0.2s; }
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(-2deg); }
   25% { transform: translateY(-30px) rotate(2deg); }
@@ -697,8 +703,9 @@ section {
 
 <!-- ===== HERO ===== -->
 <section id="hero">
-  <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
-  <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
+  <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
+  <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
+  <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
   <div class="balloon"></div><div class="balloon"></div><div class="balloon"></div><div class="balloon"></div>
   <h1>
     <span>🎉</span> Happy Birthday <span>🎉</span>
@@ -789,6 +796,7 @@ section {
   <source src="saavane-happy-birthday-254480.mp3" type="audio/mpeg">
 </audio>
 <section id="cake-section">
+  <div style="color:#fbbf24;font-size:1.1rem;margin-bottom:0.5rem;z-index:2;text-align:center;font-weight:600;text-shadow:0 0 20px rgba(251,191,36,0.3);">💡 دوسي على راس الشمعة عشان تتطفى</div>
   <h2>🎂 كيكة عيد الميلاد</h2>
   <div class="cake-container">
     <div class="cake">
@@ -989,7 +997,7 @@ candles.forEach(candle => {
   candle.addEventListener('click', (e) => {
     e.stopPropagation();
     if (!songFinished) {
-      showToast('😤 استني الأغنية الأول يا جموسة يا عشر! 🎵');
+      showToast('😤 استني الأغنية تخلص الأول يا جموسة يا عشر! 🎵');
       return;
     }
     if (!candle.classList.contains('blown')) {
